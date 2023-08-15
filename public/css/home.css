@@ -1,0 +1,355 @@
+root{
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: 0.5rem 0.5rem 0 rgba(88, 42, 149, 0.2);
+    --text-shadow: 0.3rem 0.3rem 0 rgb(199, 199, 199);
+    --border: 0.2rem solid var(--blue);
+    --blue: #0F9AF1;
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.2rem;
+    color: #444;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 4rem 5%;
+}
+
+section:nth-child(odd){
+    margin: 4rem 0;
+}
+
+section:nth-child(even){
+    margin-top: 5rem;
+    background: #86d1ff70;
+}
+
+/* ----********** Ultimate CSS starts here ************---- */
+
+.heading{
+    text-align: center;
+    padding-bottom: 2.5rem;
+    text-shadow: var(--text-shadow);
+    color: var(--black);
+    font-size: 6rem;
+    letter-spacing: 0.1rem;
+}
+
+.heading span{
+    color: var(--blue);
+    text-transform: capitalize;
+}
+
+/* ---- Button's CSS ----- */
+
+.btn{
+    display: inline-block;
+    margin-top: 0.8rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border-radius: .5rem;
+    border: var(--border);
+    cursor: pointer;
+    font-size: larger;
+    color: rgb(7, 7, 7);
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+}
+
+.btn span{
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+    background: var(--blue);
+    color: #fff;
+    margin: 0.4rem;
+}
+
+.btn:hover{
+    background: var(--blue);
+    color: #fff;
+}
+
+.btn:hover span{
+    color: var(--blue);
+    background: #fff;
+    margin-left: 1rem;
+}
+
+/* -- Header section  --*/
+.header{
+    padding: 1rem;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(205, 205, 205, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.header .logo{
+    color: var(--blue);
+    padding-left: 1rem;
+}
+
+#icon {
+    border: 2px solid red;
+    height: 2rem;
+    width: 2rem;
+}
+
+.header span{
+    font-size: 2.2rem;
+    margin-left: 0.4rem;
+    color: var(--blue);
+}
+
+.header .navbar a{
+    font-size: 1.2rem;
+    color: var(--black);
+    margin-right: 2rem;
+}
+
+.header .navbar a:hover{
+    border-bottom: 2px solid var(--blue);
+    transition: color 0.2s ease-in-out;
+    color: var(--blue);
+}
+
+/* -------- Menu part ------- */
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:var(--blue);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 8rem;
+}
+
+.home .image{
+    flex: 2;
+}
+
+.home .image img{
+    width: 90%;
+}
+
+.home .content{
+    flex: 1 1 30rem;
+}
+
+.home .content h3{
+    font-size: 4rem;
+    color: var(--black);
+    line-height: 1.5;
+    text-shadow: var(--text-shadow);
+}
+
+/* ------ services containers ------ */
+.services{
+    display: flex;
+    flex-direction: column;
+}
+
+.services .box-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.services .box-container .box{
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+    margin: 1.3rem;
+    border: var(--border);
+}
+
+.services .box-container .box .service-content-heading{
+    display: flex;
+}
+
+.services .box-container .box .service-content-heading i{
+    margin-right: 1.2rem;
+}
+
+.services .box-container .box{
+    max-width: 400px;
+}
+
+.services .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: 1rem;
+}
+
+.services .box-container .box i{
+    font-size: 3rem;
+    padding-bottom: .5rem;
+    color: var(--blue);
+}
+
+.services .box-container .box p{
+    color: var(--light-color);
+    font-size: 1.2rem;
+}
+
+/* ----- About US section ------ */
+.about .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.about .row .image{
+    flex: 2;
+    padding-left: 5rem;
+}
+
+.about .row .image img{
+    width: 90%;
+}
+
+.about .row .content{
+    flex: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+}
+
+.about .row .content p{
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    color: var(--light-color);
+}
+
+/*  ----- ******* Footer Section ****** ----- */
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.footer .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding: .8rem;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.1rem;
+    color: var(--light-color);
+    padding: 1rem;
+}
+
+.footer .box-container .box a i{
+    padding-right: 0.5rem;
+    color: var(--blue);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 1.5rem;
+}
+
+/* ---- media query -----*/
+@media screen and (max-width: 1050px) {
+    .row,
+    .home{
+        flex-direction: column;
+    }
+
+    .home .image img {
+        width: 60%;
+        margin-bottom: 1.2rem;
+    }
+
+    .about .row .image img{
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .heading{
+        font-size: 4rem;
+        margin-top: 1rem;
+    }
+
+    .about .row .image{
+        padding-left: 0;
+    }
+
+    .services .box-container .box .service-content-heading {
+        font-size: 0.8rem;
+    }
+
+    .review .box{
+        padding: 1.5rem;
+    }
+
+    .slide-content{
+        padding: 0 1rem;
+    }
+
+    .review .box h3{
+        padding: 0.5rem;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 2rem;
+    }
+
+    .services .box-container .box{
+        padding: 1.3rem;
+        margin: 1rem 0;
+    }
+}

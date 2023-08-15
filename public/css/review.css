@@ -1,0 +1,86 @@
+/* -----**** Review Section ****----- */
+:root{
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: 0.4rem 0.4rem 0 rgba(42, 115, 149, 0.2);
+    --text-shadow: 0.3rem 0.3rem 0 rgb(199, 199, 199);
+    --border: 0.2rem solid var(--blue);
+    --blue: #0F9AF1;
+}
+
+.slide-container {
+    width: 100%;
+    padding-bottom: 2.2rem;
+}
+
+.slide-content {
+    margin: 0 1.5rem;
+    overflow: hidden;
+    padding: 1.5rem;
+}
+
+.review .box {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    padding: 3rem;
+    background-color: #fff;
+}
+
+.review .box:hover {
+    color: var(--blue);
+    box-shadow: #0F9AF1, #0F9AF1 0px 13px 9px;
+    scale: 1.05;
+}
+
+.review .box h3 {
+    font-size: 2.1rem;
+    padding: 1.1rem;
+}
+
+.review .box>div{
+    margin: 0.8rem;
+}
+
+.review .box .image img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 2rem;
+}
+
+.review .box .skill-content {
+    letter-spacing: 0.1rem;
+    text-align: justify;
+}
+
+.review .box .skill-content .tech {
+    text-align: left;
+}
+
+.swiper-button {
+    color: #0F9AF1;
+}
+
+.swiper-button:hover {
+    color: #0F9AF1;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--black);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #0F9AF1;
+}
+
+.swiper-button-next::after {
+    margin-left: 1.5rem;
+}
+
+.swiper-button-prev::after {
+    margin-right: 1.5rem;
+}

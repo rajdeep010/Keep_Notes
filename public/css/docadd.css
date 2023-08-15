@@ -1,0 +1,182 @@
+:root{
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: 0.5rem 0.5rem 0 rgba(88, 42, 149, 0.2);
+    --text-shadow: 0.3rem 0.3rem 0 rgb(247, 247, 247);
+    --border: 0.2rem solid var(--blue);
+    --blue: #0F9AF1;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 5%;
+    padding-top: 3rem;
+}
+
+section:nth-child(odd){
+    background: #c2f7ff;
+}
+
+.colored-toast.swal2-icon-success {
+    background-color: var(--blue) !important;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: var(--blue) !important;
+}
+
+.colored-toast .swal2-title {
+    color: white;
+}
+
+.colored-toast .swal2-close {
+    color: white;
+}
+
+.colored-toast .swal2-html-container {
+    color: white;
+}
+
+
+/* ----****** Ultimate CSS starts now *****---- */
+
+.heading{
+    text-align: center;
+    text-shadow: var(--text-shadow);
+    color: var(--black);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.heading span{
+    color: var(--blue);
+    text-transform: capitalize;
+}
+
+#icon {
+    border: 2px solid red;
+    height: 2rem;
+    width: 2rem;
+
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #f0f0f0;
+    color:var(--green);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* ---- Button's CSS ----- */
+
+.btn{
+    display: inline-block;
+    margin-top: 0.8rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border-radius: .5rem;
+    border: var(--border);
+    cursor: pointer;
+    font-size: larger;
+    color: rgb(7, 7, 7);
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+}
+
+.btn span{
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.4rem;
+    background: var(--blue);
+    color: #fff;
+    margin: 0.4rem;
+}
+
+.btn:hover{
+    background: var(--blue);
+    color: #fff;
+}
+
+.btn:hover span{
+    color: var(--blue);
+    background: #fff;
+    margin-left: 1rem;
+}
+
+/* ***** Booking section CSS ***** */
+
+.book{
+    padding-top: 10rem;
+}
+
+.book .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.book .row form{
+    flex: 1 1 20rem;
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem 1.3rem 1.3rem 1.3rem;
+    border-radius: 0.8rem;
+    margin-top: 1.1rem;
+}
+
+.book .row form h3{
+    padding-bottom: 0.8rem;
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0 rgb(199, 199, 199);
+}
+
+.book .row form .box{
+    border-radius: 0.5rem;
+    width: 100%;
+    margin: 0.4rem 0;
+    border: var(--border);
+    font-size: 1.1rem;
+    padding: 1.1rem;
+    color: var(--black);
+    outline: none;
+}
+
+.book .row form label{
+    display: table;
+}
+
+.book .row form .boxfill{
+    background-color: #0F9AF1;
+    color: #fff;
+}
+
+.book .row form .boxfill:hover{
+    background-color: rgb(255, 255, 255);
+    color: #0F9AF1;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+textarea{
+    resize: none;
+}
+
+.book .row form .btn{
+    padding: 0.4rem 0.75rem;
+}

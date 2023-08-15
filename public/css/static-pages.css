@@ -1,0 +1,48 @@
+:root{
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: 0.5rem 0.5rem 0 rgba(88, 42, 149, 0.2);
+    --text-shadow: 0.3rem 0.3rem 0 rgb(199, 199, 199);
+    --border: 0.2rem solid #e2dbdb;
+    --blue: #0F9AF1;
+}
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    background-color: var(--blue);
+}
+
+.btn{
+    border: var(--border);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.container .image img{
+    height: 14rem;
+    width: 14rem;
+}
+
+.container .description{
+    padding: 2rem;
+}
+
+.container .description h1{
+    margin-bottom: 1rem;
+}
+
+.container .description p{
+    margin-bottom: 0.8rem;
+}

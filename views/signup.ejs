@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Keep Notes</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oxygen&family=Prompt:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+
+<body>
+
+    <!-- Log-in / Sign Up Section HTML -->
+    <div class="container">
+
+        <div class="forms-container">
+
+            <div class="signin-signup">
+
+                <!-- *********----------- SIGN IN PART ----------********** -->
+
+                <form action="/signin" class="sign-in-form" method="post">
+                    <h2 class="heading"> <span> <i class="fas fa-user"></i> </span> Sign <span>in</span></h2>
+
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="email" placeholder="Email" name="email" />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password" />
+                    </div>
+
+                    <button type="submit" class="btn">Sign In <span class="fas fa-angle-double-right"></span></button>
+
+                </form>
+
+                <!-------------------------------------------------------------------------------------  -->
+
+                <!-- *********------------ SIGN UP PART -----------********** -->
+
+                <form action="/signup" class="sign-up-form" method="post">
+
+                    <h2 class="heading"><span> <i class="fas fa-user-plus"></i> </span>Sign <span>Up</span></h2>
+
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" name="username" />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="email" />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password" />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-user-check"></i>
+                        <input type="password" placeholder="Confirm Password" name="confirmpassword" />
+                    </div>
+
+                    <button type="submit" class="btn">Sign Up <span class="fas fa-angle-double-right"></span></button>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+
+            <div class="panel left-panel">
+
+                <div class="content">
+
+                    <h3>New here ?</h3>
+                    <p>
+                        If you are a new user then please first Sign up by pressing the button below and fill the details.
+                    </p>
+
+                    <button class="btn2 btn transparent" id="sign-up-btn">
+                        Sign up <span class="fas fa-angle-double-right"></span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel right-panel">
+
+                <div class="content">
+                    <h3>One of us ?</h3>
+                    <p>
+                        If you already a member of our family then press the button below and Sign in to your account.
+                    </p>
+                    <button class="btn2 btn transparent" id="sign-in-btn">
+                        Sign in <span class="fas fa-angle-double-right"></span>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        const sign_in_btn = document.querySelector("#sign-in-btn");
+        const sign_up_btn = document.querySelector("#sign-up-btn");
+        const container = document.querySelector(".container");
+
+        sign_up_btn.addEventListener("click", () => {
+            container.classList.add("sign-up-mode");
+        });
+
+        sign_in_btn.addEventListener("click", () => {
+            container.classList.remove("sign-up-mode");
+        });
+
+    </script>
+
+</body>
+
+</html>

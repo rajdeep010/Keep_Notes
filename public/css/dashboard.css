@@ -1,0 +1,286 @@
+:root {
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: 0.3rem 0.3rem 0 rgba(88, 42, 149, 0.2);
+    --text-shadow: 0.2rem 0.2rem 0 rgb(255, 255, 255);
+    --border: 0.2rem solid var(--blue);
+    --blue: #0F9AF1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 3rem;
+}
+
+section {
+    display: flex;
+    gap: 2rem;
+}
+
+section {
+    padding-top: 2rem;
+}
+
+body {
+    background: #c2f7ff;
+}
+
+section:nth-child(even) {
+    background: #c2f7ff;
+}
+
+/* ------*** Input Field CSS ***------ */
+.search_bar form{
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+#input_field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0.5rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0 1rem 0;
+    position: relative;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
+
+#input_field i {
+    text-align: center;
+    line-height: 55px;
+    color: var(--light-color);
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+
+#input_field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--black);
+}
+
+#input_field  input::placeholder {
+    color: var(--light-color);
+    font-weight: 500;
+}
+
+.btn-search{
+    border-radius: 50%;
+    padding: 1rem;
+    height: 57px;
+    background-color: var(--blue);
+    margin-top: 0.8rem;
+    margin-left: 0.5rem;
+    border: var(--border);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(88, 42, 149, 0.2);
+}
+
+.btn-search:hover{
+    transition: 0.2s ease-in-out;
+    color: var(--blue);
+    background-color: #fff;
+}
+
+/* ---*** Heading Section ***--- */
+.heading {
+    text-align: center;
+    padding-bottom: 2.5rem;
+    text-shadow: var(--text-shadow);
+    color: var(--black);
+    font-size: 2.3rem;
+    letter-spacing: 0.1rem;
+}
+
+.heading span {
+    color: var(--blue);
+}
+
+/* ---*** Image CSS ***--- */
+.image i {
+    text-align: center;
+    border: 4px solid var(--blue);
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #0F9AF1;
+    background-color: #fff;
+}
+
+.image i:hover {
+    background-color: #0F9AF1;
+    color: #fff;
+    cursor: pointer;
+}
+
+.imgContainer{
+    margin: 2rem;
+    padding: 2rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+}
+
+/* ---*** Documents Container ***--- */
+
+.documents-container .documents {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    margin: 0.5rem;
+    padding: 1.2rem;
+}
+
+.documents-container .documents .heading {
+    font-size: 4.1rem;
+    margin-top: -2rem;
+}
+
+.documents-container .documents .box {
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    border: var(--border);
+}
+
+.documents-container .documents .box .image-heading {
+    display: flex;
+}
+
+.documents-container .documents .box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.documents-container .documents .box:hover {
+    background-color: rgba(253, 253, 253, 0.608);
+    color: rgb(44, 44, 44);
+    cursor: pointer;
+}
+
+.documents-container .documents .box p {
+    color: rgb(71, 71, 71);
+}
+
+.documents-container .documents .box p:hover {
+    color: rgb(0, 0, 0);
+    transition: 0.2s ease-in-out;
+}
+
+.documents-container .documents .box .image-heading {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.documents-container .documents .box .image-heading .image img {
+    height: 5rem;
+    width: 5rem;
+    border: var(--border);
+    border-radius: 50%;
+    color: var(--blue);
+    margin-bottom: 2.2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.documents-container .documents .box .image-heading span {
+    color: var(--blue);
+}
+
+.documents-container .documents .box .image-heading h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    letter-spacing: 0;
+    text-shadow: var(--text-shadow);
+}
+
+.documents-container .documents .box .image-heading p {
+    font-size: 1.15rem;
+}
+
+.documents-container .documents .box .document-description p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+
+.documents-container .documents .box .document-description p:hover {
+    color: rgb(0, 0, 0);
+    transition: 0.2s ease-in-out;
+}
+
+.documents-container .documents .accordion .box .forms{
+    display: flex;
+    gap: 2rem;
+}
+
+.documents-container .documents .accordion .box .accordion-button{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.documents-container .documents .box .document-description .forms form{
+    margin-right: 1rem;
+}
+
+#document-image img {
+    height: 15rem;
+    width: 15rem;
+}
+
+@media screen and (max-width: 780px) {
+    .documents-container .documents .heading {
+        font-size: 3.5rem;
+    }
+
+    .documents-container .documents .box .image-heading h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .btn{
+        font-size: 1.2rem;
+    }
+
+    .documents-container .documents .heading {
+        font-size: 3rem;
+    }
+
+    .documents-container .documents .box .image-heading h3 {
+        font-size: 1.8rem;
+    }
+
+    .documents-container .documents .box{
+        padding: 1rem;
+    }
+}

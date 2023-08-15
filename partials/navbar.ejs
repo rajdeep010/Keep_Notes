@@ -1,0 +1,50 @@
+<nav class="nav">
+
+    <i class="fas fa-align-justify navOpenBtn burger-icon"></i>
+
+    <span class="logo">
+        <img src="./images/favicon.ico" class="nav-icon-logo" height="50px" width="50px" alt="logo">
+        <a href="/"> Keep Notes</a>
+    </span>
+
+    <% if(typeof username==='undefined' ) { %>
+
+        <ul class="nav-links">
+            <i class="fas fa-times-circle navCloseBtn"></i>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <% } else { %>
+
+            <ul class="nav-links">
+                <i class="fas fa-times-circle navCloseBtn"></i>
+                <li><a href="/dashboard">Home</a></li>
+                <li><a href="/docadd">Add Document</a></li>
+                <li><a href="/logout">Log Out</a></li>
+            </ul>
+
+            <% } %>
+
+</nav>
+
+<script>
+
+    const nav = document.querySelector(".nav"),
+        navOpenBtn = document.querySelector(".navOpenBtn"),
+        navCloseBtn = document.querySelector(".navCloseBtn");
+
+
+    navOpenBtn.addEventListener("click", () => {
+        nav.classList.add("openNav");
+    });
+
+
+    navCloseBtn.addEventListener("click", () => {
+        nav.classList.remove("openNav");
+    });
+
+</script>
