@@ -156,9 +156,15 @@ router.get('/dashboard', auth, async (req, res) => {
 })
 
 // ! -------******* Searching For Notes *******-------
-router.get('/search', auth, (req, res) => {
+router.post('/search', auth, async (req, res) => {
     try{
         const query = req.body.searchInput
+        const all_docs = await Document.find({noteTitle: {'$regex' : query, '$options' : 'i'}})
+
+        res.render('searchdocs', {
+            username: req.user.username,
+            documents: all_docs,
+        })
     }catch(err){
         res.render('static/error', {
             reason: 'You are not authorize for searching'
@@ -166,6 +172,11 @@ router.get('/search', auth, (req, res) => {
     }
 })
 
+router.get('/search', auth, async(req, res) => {
+    res.render('static/error', {
+        reason: 'Searching for what ❓❓❓'
+    })
+})
 
 // ! ----------***** Notes Adding Pages *****----------
 router.get('/docadd', auth, (req, res) => {

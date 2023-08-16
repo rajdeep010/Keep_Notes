@@ -2,7 +2,7 @@ root{
     --black: #444;
     --light-color: #777;
     --box-shadow: 0.5rem 0.5rem 0 rgba(88, 42, 149, 0.2);
-    --text-shadow: 0.3rem 0.3rem 0 rgb(199, 199, 199);
+    --text-shadow: 0.2rem 0.2rem 0 #fff;
     --border: 0.2rem solid var(--blue);
     --blue: #0F9AF1;
 }
@@ -44,8 +44,8 @@ section:nth-child(odd){
 }
 
 section:nth-child(even){
-    margin-top: 5rem;
-    background: #86d1ff70;
+    margin-top: 4rem;
+    background: #c2f7ff;
 }
 
 /* ----********** Ultimate CSS starts here ************---- */
@@ -53,7 +53,6 @@ section:nth-child(even){
 .heading{
     text-align: center;
     padding-bottom: 2.5rem;
-    text-shadow: var(--text-shadow);
     color: var(--black);
     font-size: 6rem;
     letter-spacing: 0.1rem;
@@ -180,6 +179,11 @@ section:nth-child(even){
     line-height: 1.5;
     text-shadow: var(--text-shadow);
 }
+
+h3{
+    text-shadow: var(--text-shadow);
+}
+
 
 /* ------ services containers ------ */
 .services{

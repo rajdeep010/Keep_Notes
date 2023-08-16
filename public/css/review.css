@@ -3,7 +3,7 @@
     --black: #444;
     --light-color: #777;
     --box-shadow: 0.4rem 0.4rem 0 rgba(42, 115, 149, 0.2);
-    --text-shadow: 0.3rem 0.3rem 0 rgb(199, 199, 199);
+    --text-shadow: 0.3rem 0.3rem 0 rgba(199, 199, 199, 0);
     --border: 0.2rem solid var(--blue);
     --blue: #0F9AF1;
 }
@@ -27,7 +27,7 @@
     border: var(--border);
     box-shadow: var(--box-shadow);
     border-radius: 1rem;
-    padding: 3rem;
+    padding: 2.3rem;
     background-color: #fff;
 }
 

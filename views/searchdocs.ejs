@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dashboard</title>
+
+    <title>Searched Docs</title>
 
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
@@ -21,7 +22,6 @@
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/dashboard.css">
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400&family=Tilt+Prism&family=Work+Sans:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
@@ -41,22 +41,9 @@
 
             <div class="documents">
 
-                <div class="search_bar">
-                    <form action="/search" method="post">
-                        <div id="input_field">
-                            <i class="fas fa-question-circle"></i>
-                            <input type="text" placeholder="Search for Notes" name="searchInput" class="input" />
-                        </div>
-
-                        <button type="submit" class="btn-search">
-                            <span class="fas fa-search"></span>
-                        </button>
-                    </form>
-                </div>
-
-                <h1 class="heading">
-                    <i class="fas fa-folder-open"></i>
-                    My <span>Notes</span>
+                <h1 class="heading" style="margin-top: 5rem;">
+                    <i class="fas fa-search"></i>
+                    Search <span>Docs</span>
                 </h1>
 
                 <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -156,8 +143,6 @@
 
 
         <!--  ========= JS PART ============ -->
-
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

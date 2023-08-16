@@ -25,7 +25,7 @@ section{
     padding-top: 3rem;
 }
 
-section:nth-child(odd){
+section:nth-child(even){
     background: #c2f7ff;
 }
 
@@ -47,6 +47,10 @@ section:nth-child(odd){
 
 .colored-toast .swal2-html-container {
     color: white;
+}
+
+.nav .logo a{
+    margin-bottom: 1rem;
 }
 
 
